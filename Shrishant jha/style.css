@@ -1,0 +1,70 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    background: #16213e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.stats {
+    font-size: 1.5rem;
+    color: #e94560;
+    margin-bottom: 20px;
+}
+
+nav button {
+    background: #0f3460;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hidden { display: none; }
+
+ul { list-style: none; padding: 0; }
+
+li {
+    background: #0f3460;
+    margin: 10px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.reward { color: #4ecca3; font-weight: bold; }
+
+.shop-grid .item {
+    background: #533483;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+button:hover { opacity: 0.8; }
+
+#claim-btn {
+    background: #e94560;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}

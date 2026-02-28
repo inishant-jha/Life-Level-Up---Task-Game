@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Level Up - Task Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Life Level Up</h1>
+            <div class="stats">
+                <p>Coins: <span id="coin-count">0</span> 🪙</p>
+            </div>
+        </header>
+
+        <nav>
+            <button onclick="showSection('tasks')">Daily Tasks</button>
+            <button onclick="showSection('shop')">Rewards Shop</button>
+            <button onclick="showSection('progress')">Progression</button>
+        </nav>
+
+        <section id="tasks">
+            <h2>Today's Quests</h2>
+            <ul id="task-list">
+                <li>
+                    <input type="checkbox" class="task-check" data-id="1">
+                    <span>Study (3 Hours)</span>
+                    <span class="reward">+20 Coins</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="task-check" data-id="2">
+                    <span>Exercise (1 Hour)</span>
+                    <span class="reward">+20 Coins</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="task-check" data-id="3">
+                    <span>2-3 Liters Water</span>
+                    <span class="reward">+20 Coins</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="task-check" data-id="4">
+                    <span>Skill Upgrade (1 Hour)</span>
+                    <span class="reward">+20 Coins</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="task-check" data-id="5">
+                    <span>Healthy Food</span>
+                    <span class="reward">+20 Coins</span>
+                </li>
+            </ul>
+            <button id="claim-btn">Claim Daily Reward (Bonus 100)</button>
+        </section>
+
+        <section id="shop" class="hidden">
+            <h2>Epic Rewards Shop</h2>
+            <div class="shop-grid">
+                <div class="item"><span>Cheat Meal</span> <button onclick="buyItem(1000)">1000 🪙</button></div>
+                <div class="item"><span>Go Outside & Play</span> <button onclick="buyItem(2000)">2000 🪙</button></div>
+                <div class="item"><span>Skip Exercise</span> <button onclick="buyItem(3000)">3000 🪙</button></div>
+                <div class="item"><span>Skip Study Day</span> <button onclick="buyItem(4000)">4000 🪙</button></div>
+                <div class="item"><span>Full Rest Day</span> <button onclick="buyItem(5000)">5000 🪙</button></div>
+            </div>
+        </section>
+
+        <section id="progress" class="hidden">
+            <h2>Weekly Progression</h2>
+            <canvas id="progressChart"></canvas>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
